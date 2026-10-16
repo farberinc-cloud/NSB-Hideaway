@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming soon | NSB Hideaway</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('assets/background.jpg') center/cover no-repeat fixed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.58);
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-family: 'Jacques Francois', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin: 1.5rem 0;
+      font-weight: 600;
+    }
+    .subtitle {
+      font-size: clamp(1.2rem, 3vw, 1.8rem);
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #333;
+      padding: 15px 40px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 2rem 0;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: scale(1.05); }
+    .bonus {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+    .bonus strong { font-size: 1.4rem; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Your Perfect Vacation Spot is Here</h1>
+    <h2>The Hideaway</h2>
+    <p class="subtitle">Book Your Own Private New Smyrna Beach Bungalow</p>
+    <a href="https://www.airbnb.com/rooms/53292846" class="btn" target="_blank">Reserve Now</a>
+    <div class="bonus">
+      <strong>Summer Bonus!</strong><br>
+      Book 5 Nights and Get a FREE Gift Card worth $200 to World Famous 'The Garlic' Restaurant in New Smyrna Beach - just 5 minutes from the Hideaway!
+    </div>
+  </div>
+</body>
+</html>
