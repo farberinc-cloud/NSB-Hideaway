@@ -78,15 +78,66 @@
     .faq-a { display: none; padding: 0 0 18px 0; }
     .faq-a.open { display: block; }
 
+  
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+    .quote {
+      background: rgba(255,255,255,0.1);
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+    .quote strong { display: block; margin-top: 8px; font-style: normal; font-weight: 600; }
+    .drive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .drive-item {
+      background: rgba(255,255,255,0.08);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .day-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .day-item {
+      flex: 1 1 140px;
+      max-width: 180px;
+      background: rgba(255,255,255,0.08);
+      padding: 15px 10px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
   </style>
 </head>
 <body>
   <div class="hero">
     <div class="content">
+      <div class="badge">Adults-Only Oasis · 30+ · Private Pool</div>
       <h1>Your Perfect Vacation Spot is Here</h1>
       <h2>The Hideaway</h2>
       <p class="subtitle">Private New Smyrna Beach Bungalow with Saltwater Pool</p>
       <p class="drive">45–75 minutes from Orlando, Lake Mary, Longwood & Casselberry</p>
+      <div class="quote">“The private pool and outdoor spaces were exactly as described — peaceful and beautiful. We never wanted to leave.”<strong>— Guest review, 5.0 stars</strong></div>
       <a href="https://www.airbnb.com/rooms/53292846" class="btn" target="_blank">Reserve Now on Airbnb</a>
       <div class="bonus">
         <strong>Summer Bonus!</strong><br>
@@ -114,6 +165,30 @@
         <h3>Peaceful Adult Getaway</h3>
         <p>No pets, no smoking, no parties. Guests must be 30+ and the booker must stay on property.</p>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Easy Drive from Central Florida</h2>
+    <p style="text-align:center; margin-bottom:10px;">A private oasis without the long haul.</p>
+    <div class="drive-grid">
+      <div class="drive-item"><strong>Orlando</strong><br>55–75 min</div>
+      <div class="drive-item"><strong>Lake Mary / Longwood</strong><br>45–65 min</div>
+      <div class="drive-item"><strong>Casselberry</strong><br>~50–65 min</div>
+      <div class="drive-item"><strong>Daytona Airport (DAB)</strong><br>~25–30 min</div>
+      <div class="drive-item"><strong>Sanford Airport (SFB)</strong><br>~45–55 min</div>
+      <div class="drive-item"><strong>Orlando Airport (MCO)</strong><br>~70–90 min</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">A Day at The Hideaway</h2>
+    <p style="text-align:center;">Golden hour, private pool, and walkable downtown.</p>
+    <div class="day-strip">
+      <div class="day-item"><strong>Morning</strong><br>Coffee on the porch</div>
+      <div class="day-item"><strong>Afternoon</strong><br>Private saltwater pool</div>
+      <div class="day-item"><strong>Golden Hour</strong><br>Fire table & pool lights</div>
+      <div class="day-item"><strong>Evening</strong><br>Walk to downtown or The Garlic</div>
     </div>
   </section>
 
