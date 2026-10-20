@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming soon | NSB Hideaway</title>
+  <title>NSB Hideaway | Private Pool Oasis in Historic Downtown New Smyrna Beach</title>
+  <meta name="description" content="Private saltwater pool bungalow in historic downtown New Smyrna Beach. 45-75 minutes from Orlando, Lake Mary, Longwood & Casselberry. Book 5 nights for a $200 The Garlic gift card.">
   <link rel="icon" href="assets/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -11,42 +12,34 @@
     body {
       font-family: 'Poppins', sans-serif;
       background: url('assets/background.jpg') center/cover no-repeat fixed;
+      color: white;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.58);
+      z-index: -1;
+    }
+    .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       text-align: center;
-      position: relative;
-    }
-    body::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.58);
-      z-index: 1;
-    }
-    .content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
       padding: 40px 20px;
     }
+    .content { max-width: 800px; }
     h1 {
       font-family: 'Jacques Francois', serif;
       font-size: clamp(2rem, 5vw, 4rem);
       margin-bottom: 1rem;
       font-weight: 400;
     }
-    h2 {
-      font-size: clamp(1.5rem, 4vw, 2.5rem);
-      margin: 1.5rem 0;
-      font-weight: 600;
-    }
-    .subtitle {
-      font-size: clamp(1.2rem, 3vw, 1.8rem);
-      margin-bottom: 2rem;
-    }
+    h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin: 1.5rem 0; font-weight: 600; }
+    .subtitle { font-size: clamp(1.2rem, 3vw, 1.8rem); margin-bottom: 1rem; }
+    .drive { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
     .btn {
       display: inline-block;
       background: #fff;
@@ -56,7 +49,7 @@
       border-radius: 50px;
       font-weight: 600;
       font-size: 1.1rem;
-      margin: 2rem 0;
+      margin: 0.5rem;
       transition: transform 0.2s;
     }
     .btn:hover { transform: scale(1.05); }
@@ -68,18 +61,93 @@
       font-size: 1.1rem;
     }
     .bonus strong { font-size: 1.4rem; }
+    section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px; }
+    .feature { background: rgba(255,255,255,0.08); padding: 20px; border-radius: 10px; text-align: center; }
+    .links { text-align: center; margin: 30px 0; }
+    .links a { color: #fff; margin: 0 15px; text-decoration: underline; }
+    footer { text-align: center; padding: 40px 20px; background: rgba(0,0,0,0.3); }
+    .blog-teaser { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+    .card { background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; text-decoration: none; color: white; }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-content { padding: 15px; }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Your Perfect Vacation Spot is Here</h1>
-    <h2>The Hideaway</h2>
-    <p class="subtitle">Book Your Own Private New Smyrna Beach Bungalow</p>
-    <a href="https://www.airbnb.com/rooms/53292846" class="btn" target="_blank">Reserve Now</a>
-    <div class="bonus">
-      <strong>Summer Bonus!</strong><br>
-      Book 5 Nights and Get a FREE Gift Card worth $200 to World Famous 'The Garlic' Restaurant in New Smyrna Beach - just 5 minutes from the Hideaway!
+  <div class="hero">
+    <div class="content">
+      <h1>Your Perfect Vacation Spot is Here</h1>
+      <h2>The Hideaway</h2>
+      <p class="subtitle">Private New Smyrna Beach Bungalow with Saltwater Pool</p>
+      <p class="drive">45–75 minutes from Orlando, Lake Mary, Longwood & Casselberry</p>
+      <a href="https://www.airbnb.com/rooms/53292846" class="btn" target="_blank">Reserve Now on Airbnb</a>
+      <div class="bonus">
+        <strong>Summer Bonus!</strong><br>
+        Book 5 Nights and receive a FREE $200 gift card to world-famous The Garlic — just 5 minutes from the Hideaway.
+      </div>
     </div>
   </div>
+
+  <section>
+    <h2 style="text-align:center;">Why Guests Love The Hideaway</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Private Saltwater Pool</h3>
+        <p>Outdoor bathtub, rain shower, and gas fire table in your own oasis. Pool heating available.</p>
+      </div>
+      <div class="feature">
+        <h3>Historic Downtown Location</h3>
+        <p>Steps to shops, restaurants, Saturday Farmers Market, and RiverWalk. 5-minute drive to the beach.</p>
+      </div>
+      <div class="feature">
+        <h3>5.0 Rating</h3>
+        <p>Previously an Airbnb Plus listing with consistently outstanding guest reviews.</p>
+      </div>
+      <div class="feature">
+        <h3>Peaceful Adult Getaway</h3>
+        <p>No pets, no smoking, no parties. Guests must be 30+ and the booker must stay on property.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Local Flavor</h2>
+    <p style="text-align:center; margin-bottom:20px;">Stories and guides from New Smyrna Beach — aligned with our Instagram content.</p>
+    <div class="blog-teaser">
+      <a href="blog/october-2026.html" class="card">
+        <img src="assets/background.jpg" alt="Private pool at The Hideaway">
+        <div class="card-content">
+          <h3>Private Pool Oasis in Historic Downtown NSB</h3>
+          <p>October 2026 • NSB Hideaway</p>
+        </div>
+      </a>
+      <a href="blog/september-2026.html" class="card">
+        <img src="assets/background.jpg" alt="Walkable downtown NSB">
+        <div class="card-content">
+          <h3>5 Minutes to the Beach, Steps to Everything</h3>
+          <p>September 2026 • NSB Hideaway</p>
+        </div>
+      </a>
+      <a href="blog/august-2026.html" class="card">
+        <img src="assets/background.jpg" alt="Central Florida getaway">
+        <div class="card-content">
+          <h3>Weekend Escape from Orlando & Lake Mary</h3>
+          <p>August 2026 • NSB Hideaway</p>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:30px;">
+      <a href="blog.html" class="btn">View All Local Flavor Posts</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="https://www.airbnb.com/rooms/53292846" target="_blank">Book on Airbnb</a>
+      <a href="https://www.instagram.com/NSBHideaway/" target="_blank">Follow @NSBHideaway</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <p>NSB Hideaway • Historic Downtown New Smyrna Beach • Private Pool Oasis</p>
+  </footer>
 </body>
 </html>
