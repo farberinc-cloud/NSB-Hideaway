@@ -6,7 +6,22 @@
     .faq-a { display: none; padding: 0 0 18px 0; }
     .faq-a.open { display: block; }
 
-  </style></head><body><a href="../blog.html">← All Posts</a><h1>Weekend Escape from Orlando, Lake Mary & Longwood</h1><p class="meta">August 2026 • Author: NSB Hideaway</p><img src="../assets/airbnb-12.jpg" alt="Central Florida getaway"><p>New Smyrna Beach is one of the closest authentic beach towns to Central Florida. Typical drive times from the Orlando area range from about 55 minutes to 1 hour 15 minutes via I-4 to SR-44, depending on traffic. From Lake Mary, Longwood, and Casselberry the trip is often in the 45–65 minute range under normal conditions.</p><p>That distance makes The Hideaway a practical weekend or mid-week escape. Guests leave the theme-park corridors for a private saltwater pool, walkable historic downtown, and a five-minute drive to the beach — without the density of many oceanfront properties.</p><a href="https://www.airbnb.com/rooms/1746549722715384064?check_in=2026-10-20&check_out=2026-10-25&guests=1&adults=1&s=67&unique_share_id=bc108af3-bb3e-4337-8ddf-7629e3dd497e" class="cta" target="_blank">Reserve Now on Airbnb</a>
+  </style></head><body>
+<nav class="nav" style="position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:18px 30px;z-index:10;background:rgba(0,0,0,0.25);backdrop-filter:blur(4px);">
+  <div class="nav-left">
+    <a href="../index.html" style="color:white;text-decoration:none;margin:0 12px;">Home</a>
+    <a href="../blog.html" style="color:white;text-decoration:none;margin:0 12px;">Blog</a>
+    <a href="../gallery.html" style="color:white;text-decoration:none;margin:0 12px;">Gallery</a>
+  </div>
+  <div class="nav-right">
+    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">NSB · --°F</div>
+  </div>
+</nav>
+<script>
+async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
+updateWeather();setInterval(updateWeather,3600000);
+</script>
+<a href="../blog.html">← All Posts</a><h1>Weekend Escape from Orlando, Lake Mary & Longwood</h1><p class="meta">August 2026 • Author: NSB Hideaway</p><img src="../assets/airbnb-12.jpg" alt="Central Florida getaway"><p>New Smyrna Beach is one of the closest authentic beach towns to Central Florida. Typical drive times from the Orlando area range from about 55 minutes to 1 hour 15 minutes via I-4 to SR-44, depending on traffic. From Lake Mary, Longwood, and Casselberry the trip is often in the 45–65 minute range under normal conditions.</p><p>That distance makes The Hideaway a practical weekend or mid-week escape. Guests leave the theme-park corridors for a private saltwater pool, walkable historic downtown, and a five-minute drive to the beach — without the density of many oceanfront properties.</p><a href="https://www.airbnb.com/rooms/1746549722715384064?check_in=2026-10-20&check_out=2026-10-25&guests=1&adults=1&s=67&unique_share_id=bc108af3-bb3e-4337-8ddf-7629e3dd497e" class="cta" target="_blank">Reserve Now on Airbnb</a>
   <section id="faq" style="margin-top:40px;">
     <h2 style="text-align:center;">Frequently Asked Questions</h2>
     <div class="faq-accordion">
