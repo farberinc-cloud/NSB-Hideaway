@@ -14,11 +14,11 @@
     <a href="../gallery.html" style="color:white;text-decoration:none;margin:0 12px;">Gallery</a>
   </div>
   <div class="nav-right">
-    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">NSB · --°F</div>
+    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">Currently NSB · --°F</div>
   </div>
 </nav>
 <script>
-async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
+async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`Currently NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
 updateWeather();setInterval(updateWeather,3600000);
 </script>
 <a href="../blog.html">← All Posts</a><h1>Why Guests Rate The Hideaway 5 Stars</h1><p class="meta">may 2026 • Author: NSB Hideaway</p><img src="../assets/airbnb-2.jpg" alt="Why Guests Rate The Hideaway 5 Stars"><p>The Hideaway continues to earn perfect 5.0 ratings from guests who value a meticulously clean house, the private saltwater pool, outdoor living spaces, and a convenient historic downtown location. The property was remodeled in 2019 and remains a dedicated vacation rental.</p><p>Typical drive times from the Orlando, Lake Mary, Longwood, and Casselberry areas fall between 45 and 75 minutes. The Saturday Farmers Market at Old Fort Park and The Garlic (556 E 3rd Ave) are both easy to reach. What guests notice first is how meticulously clean the house feels. A few simple house rules (no pets, no smoking, no parties, and 30+ to book) keep that calm in place.</p>

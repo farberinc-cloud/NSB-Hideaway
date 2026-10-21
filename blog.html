@@ -78,7 +78,7 @@
       <a href="gallery.html">Gallery</a>
     </div>
     <div class="nav-right">
-      <div class="weather" id="weather">NSB · --°F</div>
+      <div class="weather" id="weather">Currently NSB · --°F</div>
     </div>
   </nav>
 
@@ -235,7 +235,7 @@
       const data = await res.json();
       const temp = Math.round(data.current.temperature_2m);
       const el = document.getElementById('weather');
-      if (el) el.textContent = `NSB · ${temp}°F`;
+      if (el) el.textContent = `Currently NSB · ${temp}°F`;
     } catch (e) {}
   }
   updateWeather();

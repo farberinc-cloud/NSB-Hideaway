@@ -14,11 +14,11 @@
     <a href="../gallery.html" style="color:white;text-decoration:none;margin:0 12px;">Gallery</a>
   </div>
   <div class="nav-right">
-    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">NSB · --°F</div>
+    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">Currently NSB · --°F</div>
   </div>
 </nav>
 <script>
-async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
+async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`Currently NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
 updateWeather();setInterval(updateWeather,3600000);
 </script>
 <a href="../blog.html">← All Posts</a><h1>5 Minutes to the Beach, Steps to Everything</h1><p class="meta">September 2026 • Author: NSB Hideaway</p><img src="../assets/beach-nsb.jpg" alt="Downtown New Smyrna Beach"><p>The Hideaway sits in historic downtown New Smyrna Beach. From the property you can walk to shops, restaurants, and the weekly Saturday Farmers Market held at Old Fort Park on Sams Avenue (typically 7:00 a.m. to 12:30 p.m.). RiverWalk Park and the Intracoastal are nearby. The Atlantic is a consistent five-minute drive.</p><p>This combination of walkable downtown character and quick beach access is one of the strongest reasons guests choose the property over oceanfront condos. You keep the privacy of a private pool while still being able to stroll to dinner or the market.</p>

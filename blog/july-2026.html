@@ -14,11 +14,11 @@
     <a href="../gallery.html" style="color:white;text-decoration:none;margin:0 12px;">Gallery</a>
   </div>
   <div class="nav-right">
-    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">NSB · --°F</div>
+    <div class="weather" id="weather" style="background:rgba(255,255,255,0.12);padding:6px 14px;border-radius:50px;font-size:0.9rem;">Currently NSB · --°F</div>
   </div>
 </nav>
 <script>
-async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
+async function updateWeather(){try{const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude=29.0258&longitude=-80.9270&current=temperature_2m&temperature_unit=fahrenheit");const data=await res.json();const el=document.getElementById("weather");if(el)el.textContent=`Currently NSB · ${Math.round(data.current.temperature_2m)}°F`;}catch(e){}}
 updateWeather();setInterval(updateWeather,3600000);
 </script>
 <a href="../blog.html">← All Posts</a><h1>7 Nights + $200 at The Garlic</h1><p class="meta">July 2026 • Author: NSB Hideaway</p><img src="../assets/the-garlic-giftcard.png" alt="The Garlic"><p>Book seven nights at The Hideaway and receive a complimentary $200 gift card to The Garlic, the well-known Italian restaurant at 556 E 3rd Avenue. The restaurant is roughly five minutes from the property and is known for rustic Italian dishes, wood-fired steaks, live music, and its distinctive outdoor garden setting. It is open daily from 4:00 p.m.</p><p>The gift card pairs naturally with a stay that already places you steps from downtown dining and a short drive from the beach.</p>
